@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .modal {
@@ -20,6 +21,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 15px;
+  flex-shrink: 1;
 }
 
 .icon {
@@ -66,4 +72,55 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* ETAPES */
+
+/* 
+
+1. Englober header, button, main text, cancel, and continue divs;
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+.right{
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.header{
+  display: flex;
+  font-weight: bold;
+  font-size: 19px;
+  justify-content: space-between;
+}
+
+.middle-part{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.content-center{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
